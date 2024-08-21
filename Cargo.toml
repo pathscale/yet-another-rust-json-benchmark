@@ -1,0 +1,16 @@
+[package]
+name = "json-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde_json = {version = "1.0.125"}
+nanoserde = {version = "0.1.37"}
+serde = { version = "1.0.208", features = ["derive"] }
+sonic-rs = {version = "0.3.11"}
+humantime = "2.1.0"
+json = {version = "0.12.4"}
+
+[build]
+rustflags = ["-g", "-C", "target-cpu=native"]
+rustdocflags = ["-C", "target-cpu=native"]
