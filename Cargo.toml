@@ -10,6 +10,21 @@ serde = { version = "1.0.208", features = ["derive"] }
 sonic-rs = {version = "0.3.11"}
 humantime = "2.1.0"
 json = {version = "0.12.4"}
+actson = {version = "1.1.0", features = ["serde_json"]}
+itertools = "0.13.0"
+gjson = {version = "0.8.1"}
+serde_json_borrow = {version = "0.5.1"}
+jsonic = {version = "0.2.12"}
+hifijson = {version = "0.2.2"}
+simd-json = {version = "0.14.0-rc.2"}
+rustc-serialize = "0.3.25"
+json-deserializer = "0.4.4"
+justjson = "0.3.0"
+tinyjson = "2.5.1"
+blink-alloc = {version = "0.3.1"}
+ajson = {version = "0.3.1"}
+cpu-time = {version = "1.0.0"}
+tokio = { version = "1.39.2", features = ["macros", "rt-multi-thread"] }
 
 [build]
 rustflags = ["-g", "-C", "target-cpu=native"]
